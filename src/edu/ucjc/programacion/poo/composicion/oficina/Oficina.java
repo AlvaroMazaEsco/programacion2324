@@ -12,6 +12,7 @@ public class Oficina {
 		Despacho despacho = new Despacho("DES-1",1);
 		Despacho despacho2 = new Despacho("DES-2",1,mesa,sillas);
 		
+		System.out.println(despacho.getMesa().getColor());
 		despacho.setMesa(mesa);
 		System.out.println(despacho.getMesa().getColor());
 		despacho2.getMesa().setColor("azul");
@@ -19,7 +20,7 @@ public class Oficina {
 		System.out.println(despacho.getMesa().getColor());
 		
 		
-		System.out.println(despacho2.getSillas()[1].getColor());
+		despacho2.getSillas()[1].getColor();
 		
 	}
 	
